@@ -14,41 +14,45 @@
 
 /* Landing Page */
 body {
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  background-image: url("background.png");
+  /* margin: 0; */
+  /* display: flex;
+  flex-direction: column; */
+  /* background-image: url("background.png"); */
   font-family: var(--font-default);
   font-size: 18px;
-  max-width: 1300px;
-  margin: 0 auto;
+  /* max-width: 1300px; */
+  width: 100vw;
+  height: 100vh;
 }
 
 p {
-  margin-bottom: 0;
-  padding: 0.5vw;
+  /* margin-bottom: 0; */
+  padding: 1rem;
 }
 
 img {
-  padding-right: 1rem;
+  /* padding-right: 1rem; */
 }
 
 .topnav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   overflow: hidden;
-  margin: 3.5%;
+  margin: 3rem;
 }
 .header-logo {
-  float: left;
+  padding-left: 3rem;
 }
 .main-navbar {
-  float: right;
+  /* float: right; */
 }
 .topnav a {
   float: left;
   display: block;
   color: #000000;
   text-align: center;
-  padding: 12px 12px;
+  padding: 10px 10px;
   margin: 5px;
   text-decoration: none;
   font-size: 20px;
@@ -64,7 +68,7 @@ img {
 .topnav a.active {
   background-color: #ff0000;
   color: #ffffff;
-  border-radius: 15px;
+  border-radius: 10px;
 }
 
 .topnav .icon {
@@ -114,8 +118,8 @@ main {
   font-weight: bolder;
   color: black;
   padding-top: 0.5vw;
-  padding-left: 2vw;
-  padding-right: 2vw;
+  padding-left: 5rem;
+  padding-right: 5rem;
   margin: 1px 20px 15px;
   border-radius: 2rem;
   text-align: justify;
@@ -411,10 +415,10 @@ input[data-error]::after {
   font-size: 16px;
 }
 .hero-section {
-  min-height: 93vh;
   border-radius: 10px;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
+  grid-auto-rows: minmax(670px, 670px);
   overflow: hidden;
   box-shadow: 0 2px 7px 2px rgba(0, 0, 0, 0.2);
   margin-bottom: 10px;
@@ -467,7 +471,8 @@ input[data-error]::after {
   width: 100%;
   height: 100%;
   display: block;
-  padding: 0;
+  object-fit: cover;
+  object-position: center;
 }
 .copyrights {
   color: #fe142f;
