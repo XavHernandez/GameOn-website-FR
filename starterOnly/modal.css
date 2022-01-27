@@ -52,16 +52,20 @@ img {
   font-family: Roboto, sans-serif;
 }
 
-.topnav a:hover {
+.topnav a:hover:not(.icon) {
   background-color: #ff0000;
   color: #ffffff;
   border-radius: 8px;
 }
 
-.topnav a.active {
+.topnav a.active:not(.icon) {
   background-color: #ff0000;
   color: #ffffff;
   border-radius: 8px;
+}
+
+.topnav a.icon.active {
+  color: red;
 }
 
 .topnav .icon {
@@ -85,7 +89,7 @@ img {
   .topnav.responsive .icon {
     position: absolute;
     right: 0;
-    top: 0;
+    top: 14px;
   }
   .topnav.responsive a {
     float: none;
@@ -101,7 +105,8 @@ img {
   .topnav a.icon {
     float: right;
     display: block;
-    margin-top: -15px;
+    margin-top: -10px;
+    color: red;
   }
 }
 
@@ -181,6 +186,7 @@ main {
   border-radius: 10px;
   overflow: hidden;
   position: relative;
+  z-index: 10;
   color: #fff;
 }
 
@@ -525,9 +531,11 @@ footer {
   padding-right: 2vw;
   margin: 0 20px;
 }
+
 @media screen and (max-width: 1024px) {
   .header-logo img {
     width: 11em;
+    padding: 0 1rem;
   }
   .main-navbar {
     margin-top: 0.8em;
@@ -551,12 +559,12 @@ footer {
   .hero-headline {
     width: 100%;
     font-size: 3.2rem;
-    text-align: justify;
+    /* text-align: justify; */
     white-space: normal;
   }
   .hero-text {
     width: 100%;
-    text-align: justify;
+    /* text-align: justify; */
     font-size: 1.5rem;
   }
   .hero-img img {
@@ -572,6 +580,37 @@ footer {
     margin-top: 50px;
     text-align: center;
   }
+}
+
+@media screen and (max-width: 425px) {
+  .header-logo img {
+    width: 8em;
+    padding: 0.5rem 1rem;
+  }
+
+  .topnav a.icon {
+    float: right;
+    display: block;
+    margin-top: -10px;
+    color: red;
+  }
+
+  .hero-headline {
+    font-size: 2rem;
+  }
+
+  .hero-text {
+    font-size: 1rem;
+  }
+
+  /* .content {
+    position: fixed;
+    margin: 1em auto;
+    bottom: 0px;
+    left: 50%;
+    right: 50%;
+    transform: translateX(-50%);
+  } */
 }
 
 @keyframes modalopen {
