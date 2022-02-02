@@ -49,8 +49,8 @@
       <div class="bground" id="bgroundClose">
         <div class="content">
           <div class="close" id="formClose"></div>
-          <div class="content content--close" id="formCloseContent">
-            <a href="index.html" class="close" id="closingMessage"></a>
+          <div class="content content--close" id="content-validated">
+            <a href="index.html" class="close" id="validated-message"></a>
             <p>Merci pour votre inscription</p>
             <a href="index.html" class="btn-submit button" id="closeForm">Fermer</a>
           </div>
@@ -71,7 +71,7 @@
                   name="first"
                   autocomplete="off"
                 /><br>
-                <p style="color: red; font-size: 0.5em;" id="erreurName"></p>
+                <p id="erreurName"></p>
               </div>
               <div
                 class="formData">
@@ -83,7 +83,7 @@
                   name="last"
                   autocomplete="off"
                 /><br>
-                <p style="color: red; font-size: 0.5em;" id="erreurLastName"></p>
+                <p id="erreurLastName"></p>
               </div>
               <div
                 class="formData">
@@ -95,7 +95,7 @@
                   name="email"
                   autocomplete="off"
                 /><br>
-                <p style="color: red; font-size: 0.5em;" id="erreurMail"></p>
+                <p id="erreurMail"></p>
               </div>
               <div
                 class="formDataDate">
@@ -106,16 +106,16 @@
                   id="birthdate"
                   name="birthdate"
                 /><br>
-                <p style="color: red; font-size: 0.5em;" id="erreurBirth"></p>
+                <p id="erreurBirth"></p>
               </div>
               <div
                 class="formData">
                 <label for="quantity">À combien de tournois GameOn avez-vous déjà participé ?</label><br>
                 <input type="number" class="text-control" id="quantity" name="quantity">
-                <p style="color: red; font-size: 0.5em;" id="erreurQ"></p>
+                <p id="error-quantity"></p>
               </div>
               <p class="text-label">A quel tournoi souhaitez-vous participer cette année ?</p>
-              <p style="color: red; font-size: 0.5em;" id="erreurTown"></p>
+              <p id="erreurTown"></p>
               <div
                 class="formData">
                 <input
@@ -198,7 +198,7 @@
                   <span class="checkbox-icon"></span>
                   J'ai lu et accepté les conditions d'utilisation.
                 </label>
-                <p style="color: red; font-size: 0.5em;" id="erreurCgv"></p>
+                <p id="erreurCgv"></p>
                 <input class="checkbox-input events" type="checkbox" id="checkbox2"/>
                 <label class="checkbox2-label" for="checkbox2">
                   <span class="checkbox-icon"></span>
@@ -206,13 +206,13 @@
                 </label>
                 <br>
               </div>
+              <p class="form_error" id="erreur"></p>
               <input
                 class="btn-submit btn-modal"
                 type="submit"
                 class="button"
                 value="C'est parti"
               />
-              <p style="color: red; font-size: 0.7em;" id="erreur"></p>
             </form>
           </div>
         </div>
