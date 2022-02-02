@@ -1,5 +1,16 @@
-# Projet GameOn
-1. Forkez ce repo ;
-2. Il est conseillé d'utiliser VisualStudio Code et vous pouvez utiliser Docker, mais ce n'est pas obligatoire ;
-3. Il n'y a aucune dépendance ;
-4. Vous ne devez utiliser que du CSS personnalisé et du JavaScript pur, sans jQuery, Bootstrap ou autre librairie.
+# GameOn
+
+Quatrième projet du parcours "Développeur Front-End" chez OpenClassroom. L'objectif est de mettre en place les validations d'un formulaire d'inscription et d'assurer la fermeture d'une modal.
+
+## Objectifs
+
+1. Assurer la fermeture d'une modal.
+2. Mettre en place les validations d'un formulaire.
+
+## Technologies
+
+HTML / CSS / JS Vanilla
+
+## Tester le projet
+
+Pour tester simplement & rapidement, veuillez préférer visiter la démo en ligne : [Hosted on Github-Pages](https://xavhernandez.github.io/XavierHernandez_3_31122021/)
