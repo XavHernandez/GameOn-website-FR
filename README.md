@@ -13,4 +13,4 @@ HTML / CSS / JS Vanilla
 
 ## Tester le projet
 
-Pour tester simplement & rapidement, veuillez préférer visiter la démo en ligne : [Hosted on Github-Pages](https://xavhernandez.github.io/XavierHernandez_3_31122021/)
+Pour tester simplement & rapidement, veuillez préférer visiter la démo en ligne : [Hosted on Github-Pages](https://xavhernandez.github.io/GameOn-website-FR/)
